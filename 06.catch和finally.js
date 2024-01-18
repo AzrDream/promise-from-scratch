@@ -1,4 +1,4 @@
-const PENDING = 'pending';
+ const PENDING = 'pending';
 const FULFILLED = 'fulfilled';
 const REJECTED = 'rejected';
 
@@ -23,12 +23,12 @@ function runMicroTask(callback) {
   }
 }
 
-/**
- * 判断一个函数是否是Promise对象
- * @param {any} obj
- * @returns {boolean}
- */
-function isPromise(obj) {
+ /**
+  * 判断一个函数是否是Promise对象
+  * @param {any} obj
+  * @returns {boolean}
+  */
+ function isPromise(obj) {
   return !!(obj && typeof obj === 'object' && typeof obj.then === 'function');
 }
 
